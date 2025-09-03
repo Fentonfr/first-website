@@ -3,7 +3,7 @@
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
-    --color-headings: #1b0760;
+    --color-heading: #1b0760;
     --color-body: #918ca4;
 }
 /* Typography */
@@ -19,7 +19,7 @@ body{
 }
 
 h1, h2, h3{
-    color: var(--color-headings);
+    color: var(--color-heading);
     margin-bottom: 1rem;
 }
 
@@ -109,4 +109,32 @@ a{
         font-size: 1.2rem;
     }
 
+}
+
+/* Lists */
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-heading)
+}
+
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick{
+    list-style-image: url(../Images/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list__item{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    .list--tick .list__item{
+        padding-left: 0;
+    }
 }
