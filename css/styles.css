@@ -256,7 +256,7 @@ a{
     display: inline-block;
 }
 
-@media screen and (mind-width: 1024px){
+@media screen and (min-width: 1024px){
     .btn{
         font-size: 1.5rem;
     }
@@ -505,7 +505,7 @@ a{
     right: -32px;
 }
 
-@media screen and (mind-width: 768px){
+@media screen and (min-width: 768px){
     .testimonial .quote, .testimonial .quote__author {
         font-size: 2.4rem;
     }
